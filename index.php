@@ -13,6 +13,31 @@
 </head>
 <body>
     <div class="container">
+      <table class="table table-bordered table-condensed">
+        <tbody>
+            <tr>
+              <td>
+                Rajesh
+              </td>
+              <td>
+                today is 19th feb
+              </td>
+              <td>
+                received in 19th feb
+              </td>
+            </tr>
+            <tr>
+              <td>Narendra</td>
+              <td>lived in Rewa Mp</td>
+              <td>Recieved in 18th feb</td>
+            </tr>
+            <tr>
+              <td>Manoj</td>
+              <td>Lived in Indore</td>
+              <td>Received in 17th feb</td>
+            </tr>
+        </tbody>
+      </table>
     </div>
 </body>
 </html
