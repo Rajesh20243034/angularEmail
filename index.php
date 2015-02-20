@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script  src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"/>
     <style type="text/css">
       .container {
@@ -12,32 +10,26 @@
     </style>
 </head>
 <body>
-    <div class="container">
-      <table class="table table-bordered table-condensed">
+    <div class="container" ng-app>
+      <table class="table table-bordered table-condensed" ng-controller="EmailController">
         <tbody>
-            <tr>
+            <tr ng-repeat="email in emails">
               <td>
-                Rajesh
+                {{email.from}}
               </td>
               <td>
-                today is 19th feb
+                {{email.subject}}
               </td>
               <td>
-                received in 19th feb
+                {{email.date}}
               </td>
-            </tr>
-            <tr>
-              <td>Narendra</td>
-              <td>lived in Rewa Mp</td>
-              <td>Recieved in 18th feb</td>
-            </tr>
-            <tr>
-              <td>Manoj</td>
-              <td>Lived in Indore</td>
-              <td>Received in 17th feb</td>
             </tr>
         </tbody>
       </table>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script  src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script type="text/javascript" src="ang.js"></script>
 </body>
 </html
